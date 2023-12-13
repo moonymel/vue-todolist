@@ -43,7 +43,8 @@ createApp({
                 text: this.added_task,
                 done: false,
             };
-            this.todo_list.push(task)
+            this.todo_list.push(task);
+            this.added_task = '';
         }
     }
 }).mount('#app')

@@ -30,7 +30,7 @@
                         </ul>
 
                         <div class="input-group mb-3 my-2">
-                            <input type="text" class="form-control" placeholder="Scrivi una nuova task" aria-label="Scrivi una nuova task" aria-describedby="button-addon2" v-model="added_task">
+                            <input type="text" class="form-control" placeholder="Scrivi una nuova task" aria-label="Scrivi una nuova task" aria-describedby="button-addon2" v-model="added_task"  @keyup.enter="addTask">
                             <button class="btn btn-outline-secondary" type="button" id="addtask" @click="addTask">Aggiungi</button>
                           </div>
 
