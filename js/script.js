@@ -29,6 +29,9 @@ createApp({
     },
 
     methods:{
+        delateTask(index){
+            this.todo_list.splice(index, 1);
+        },
 
     }
 }).mount('#app')

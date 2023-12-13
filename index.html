@@ -13,10 +13,17 @@
         <div id="app">
             <div class="container my-5">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-6">
                         <ul class="list-group list-group-flush">
                             <li v-for="(todo, index) in todo_list" :key="index" class="list-group-item" :class="(todo.done == true) ? 'text-decoration-line-through' : ''">
-                                {{ todo.text }}
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        {{ todo.text }}
+                                    </div>
+                                    <div class="buttons">
+                                        <button @click="delateTask(index)">X</button>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
