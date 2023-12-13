@@ -18,7 +18,7 @@
                         <ul class="list-group list-group-flush">
                             <li v-for="(todo, index) in todo_list" :key="index" class="list-group-item" :class="(todo.done == true) ? 'text-decoration-line-through' : ''">
                                 <div class="d-flex justify-content-between">
-                                    <div>
+                                    <div @click="todo.done = !todo.done" style="cursor:pointer">
                                         {{ todo.text }}
                                     </div>
                                     <div class="buttons">
