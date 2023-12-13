@@ -3,3 +3,31 @@
     margin:0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url('https://images5.alphacoders.com/120/1207344.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.my_card {
+    background-color:#c8d6e8;
+
+}
+
+.subtitle {
+    font-family:'Satisfy';
+}
+
+.opacity {
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+.blue, .blue:hover {
+    background-color:#004465;
+}
+
+.yellow, .yellow:hover {
+    background-color:#a0842e;
+}
+
