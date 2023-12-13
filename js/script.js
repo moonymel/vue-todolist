@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            added_task: '',
             todo_list: [
                 {
                     text: 'Finire la pozione Restringente',
@@ -33,5 +34,16 @@ createApp({
             this.todo_list.splice(index, 1);
         },
 
+        taskDone(index){
+            this.todo_list[index].done = !this.todo_list[index].done;
+        },
+
+        addTask(){
+            let task = {
+                text: this.added_task,
+                done: false,
+            };
+            this.todo_list.push(task)
+        }
     }
 }).mount('#app')
